@@ -19,15 +19,17 @@ jobs:
 
       - name: Install, build, and upload your site output
         uses: withastro/action@v1
+        # Ensure you include the output directory if it's different from the default
+        with:
+          build-output-directory: 'dist' # Specify this only if your output directory is not the default one
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v2
+
