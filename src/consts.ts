@@ -1,5 +1,5 @@
 export const SITE = {
-  title: 'Documentation',
+  title: 'Career Simulation 2',
   description: 'Your website description.',
   defaultLanguage: 'en-us'
 } as const
@@ -40,16 +40,22 @@ export const SIDEBAR: Sidebar = {
     Überschrift: [
       { text: 'Einführung', link: 'de/introduction' },
       { text: 'Seite 2', link: 'de/page-2' },
-      { text: 'Seite 3', link: 'de/page-3' }
+      { text: 'Seite 3', link: 'de/page-3' },
+      { text: 'Seite 3', link: 'de/page-4' },
+      { text: 'Seite 3', link: 'de/page-5' },
+      { text: 'Seite 3', link: 'de/page-6' }
     ],
-    'Ein weiterer Abschnitt': [{ text: 'Seite 4', link: 'de/page-4' }]
+    'Ein weiterer Abschnitt': [{ text: 'Seite 4', link: 'de/page-7' }]
   },
   en: {
-    'Section Header': [
+    'Topics': [
       { text: 'Introduction', link: 'en/introduction' },
-      { text: 'Page 2', link: 'en/page-2' },
-      { text: 'Page 3', link: 'en/page-3' }
+      { text: 'Step 1', link: 'en/page-2' },
+      { text: 'Step 2', link: 'en/page-3' },
+      { text: 'Step 3', link: 'en/page-4' },
+      { text: 'Step 4', link: 'en/page-5' },
+      { text: 'Step 5', link: 'en/page-6' },
     ],
-    'Another Section': [{ text: 'Page 4', link: 'en/page-4' }]
+    'Summary': [{ text: 'Conclusion', link: 'en/page-7' }]
   }
 }
