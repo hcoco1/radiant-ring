@@ -7,6 +7,6 @@ import sitemap from '@astrojs/sitemap'
 
 export default defineConfig({
   integrations: [mdx(), preact(), react(), sitemap()],
-  base: `/`,
-  site: `https://advanced-astro.dev`
+  base: '/radiant-ring/',
+  site: `https://github.com/hcoco1/radiant-ring`
 })
